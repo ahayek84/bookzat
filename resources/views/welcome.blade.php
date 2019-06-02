@@ -9,7 +9,7 @@
         <div class="divider"></div>
 
         <div class='price-calculator inline'>
-            <form class="simple_form new_price_calculator" id="new_price_calculator" novalidate="novalidate" action="/en/dubai/price_calculator/?landing=true&amp;wrapper=inline" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+            <form class="simple_form new_price_calculator" id="new_price_calculator" novalidate="novalidate" action="" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
                 <div class="form-group string required price_calculator_address"><label class="control-label string required" for="price_calculator_address"><abbr title="required"></abbr> Address</label><div class="input-group">
                         <div class="input-group-addon shortcut"><i class="fa fa-map-marker"></i></div>
                         <input class="string required form-control" placeholder="Address" type="text" name="price_calculator[address]" id="price_calculator_address" />
