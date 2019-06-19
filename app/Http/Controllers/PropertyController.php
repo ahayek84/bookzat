@@ -20,7 +20,7 @@ class PropertyController extends Controller
 
         $data = [];
         $data['records'] = Property::visiable()->get();
-        return view('available_properties',$data);
+        return view('available_properties.index',$data);
     }
 
     public function referral()
@@ -50,7 +50,7 @@ class PropertyController extends Controller
         //
         $data = [];
         $data['records'] = Property::all();
-        return view('available_properties',$data);
+        return view('available_properties.index',$data);
     }
 
     /**
