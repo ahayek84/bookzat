@@ -9,7 +9,7 @@
         <div class="divider"></div>
 
         <div class='price-calculator inline'>
-            <form class="simple_form new_price_calculator" id="new_price_calculator" novalidate="novalidate" action="" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+            <form action="/available_properties" id="new_price_calculator" method="get" class="simple_form new_price_calculator" >
                 <div class="form-group string required price_calculator_address"><label class="control-label string required" for="price_calculator_address"><abbr title="required"></abbr> Address</label><div class="input-group">
                         <div class="input-group-addon shortcut"><i class="fa fa-map-marker"></i></div>
                         <input class="string required form-control" placeholder="Address" type="text" name="price_calculator[address]" id="price_calculator_address" />
@@ -24,9 +24,9 @@
                     </div>
                 </div>
                 <div class="form-group email required price_calculator_email"><label class="control-label email required" for="price_calculator_email"><abbr title="required"></abbr> Email address</label><div class="input-group">
-                            <div class="input-group-addon shortcut"><i class="fa fa-envelope-o"></i></div>
-                            <input class="string email required form-control" placeholder="Email address" type="email" name="price_calculator[email]" id="price_calculator_email" /></div></div>
-                <input type="submit" name="commit" value="Get Proposals" data-disable-with="Get Proposals" class="btn btn-primary" />
+                        <div class="input-group-addon shortcut"><i class="fa fa-envelope-o"></i></div>
+                        <input class="string email required form-control" placeholder="Email address" type="email" name="price_calculator[email]" id="price_calculator_email" /></div></div>
+                <input type="submit" name="Get Proposals"  class="btn btn-primary">
             </form>
         </div>
 
