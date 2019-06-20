@@ -11,11 +11,16 @@
 |
 */
 
+
+// Auth
+Route::group(['middleware' => ['auth']], function () {
+
+    Route::resource('property', 'PropertyController');
+});
+
 Route::get('/', 'WelcomeController@show');
 
 Route::get('/home', 'HomeController@show');
-
-Route::resource('property', 'PropertyController');
 
 Route::get('/available_properties', 'PropertyController@available_properties')->name('available_properties');
 
