@@ -26,7 +26,7 @@
                 <div class="form-group email required price_calculator_email"><label class="control-label email required" for="price_calculator_email"><abbr title="required"></abbr> Email address</label><div class="input-group">
                         <div class="input-group-addon shortcut"><i class="fa fa-envelope-o"></i></div>
                         <input class="string email required form-control" placeholder="Email address" type="email" name="price_calculator[email]" id="price_calculator_email" /></div></div>
-                <input type="submit" name="Get Proposals"  class="btn btn-primary">
+                <input type="submit" name="Get Proposals"  value="Get Proposals" data-disable-with="Get Proposals"  class="btn btn-primary" >
             </form>
         </div>
 
