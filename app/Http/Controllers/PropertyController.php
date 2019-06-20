@@ -14,10 +14,11 @@ class PropertyController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function available_properties()
+    public function available_properties(Request $request)
     {
-
-
+        $email = $request->all();
+        //Dd($email['price_calculator']);
+        // to contntioune doing the logic if query comes
         $data = [];
         $data['records'] = Property::visiable()->get();
         return view('available_properties.index',$data);
