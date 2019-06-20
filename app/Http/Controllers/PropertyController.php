@@ -16,11 +16,14 @@ class PropertyController extends Controller
 
     public function available_properties(Request $request)
     {
-        $email = $request->all();
-        //Dd($email['price_calculator']);
-        // to contntioune doing the logic if query comes
+        $input = $request->all();
         $data = [];
-        $data['records'] = Property::visiable()->get();
+        if (!empty($input['price_calculator'])) {
+            $param = $input['price_calculator'];
+            $data['records'] = Property::visiable()->where("bedrooms",'=',$param['rooms'])->get();
+        }else{
+            $data['records'] = Property::visiable()->get();
+        }
         return view('available_properties.index',$data);
     }
 
