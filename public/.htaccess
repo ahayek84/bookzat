@@ -11,6 +11,8 @@
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
+    # Disable routing to bookzatwp folder
+    RewriteCond %{REQUEST_URI} !^/bookzatwp
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
 
@@ -19,6 +21,4 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 
-    # Disable routing to bookzatwp folder
-    RewriteCond %{REQUEST_URI} !^/bookzatwp
 </IfModule>
